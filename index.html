@@ -1,0 +1,111 @@
+
+    
+<!DOCTYPE html>
+<html>   
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Capital Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div class="body_pages">
+    <div class="header" id="header">
+        <video src="images/video.mp4" autoplay muted loop class="header_video" id="header_video"></video>
+        <div class="header_logo">
+            <img src="" alt="">
+        </div>
+        <div class="header_top">
+            <p>Sunt qui aute veniam occaecat aliquip incididunt</p>
+        </div>
+        <div class="header_center">
+            <p>Sint elit sunt sit nisi eiusmod dolore laboris reprehenderit.Laborum laborum sint esse ex ad qui eu dolor pariatur velit esse nisi.</p>
+        </div>
+        <div class="header_bottom">
+            <div class="header_bottom_title">
+                <p>Officia et sit voluptate proiden</p>
+            </div>
+            <div class="header_bottom_active">
+                <p>active</p>
+            </div>
+            <div class="header_bottom_abs">
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="block1">
+        <div class="block1_title">
+            <p></p>
+        </div>
+    </div>
+
+</div>
+<script src="contactform.js"></script>
+
+<script>
+ document.write('Разрешение экрана: <b>'+screen.width+'×'+document.documentElement.clientHeight+'px.</b>'); 
+window.onload = function(){
+    var height=document.documentElement.clientHeight+"px";
+    var width ;
+    var header_video=document.getElementById("header_video");
+    document.querySelector(".header").style.height= height;
+    header_video.style.height = height;
+    console.log(height);
+
+}
+  function validate(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+  //document.addEventListener("DOMContentLoaded", ready);
+    var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+    V = 0.3;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+    for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+        e.preventDefault(); //отменяем стандартное поведение
+        var w = window.pageYOffset,  // производим прокрутка прокрутка
+            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+        t = document.querySelector(hash).getBoundingClientRect().top,
+                    start = null;
+        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash  // URL с хэшем
+            }
+        }
+    }, false);
+}
+
+
+   
+
+
+
+</script>
+</body>
+</html>

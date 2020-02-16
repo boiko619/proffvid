@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+   /* background-image: url("/images/bg/bg_body.png");
+    background-position: center;
+    background-size: cover;*/
+    background: #fcfffe;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ ul, body {
+    padding: 0;
+    margin: 0; }
+
+    @font-face {
+      
+    font-family: "Circe-Bold"; 
+    src: url("../ttf/Circe-Bold.ttf") format("truetype"); 
+    }
+
+
+
+$white: #fff;
+
+
+
+.body_pages{
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    background: #000;
+    grid-template-areas: 
+    "header"
+
+
+
+    ;
+  //  padding-top: 100px;
+    grid-template-columns: 1fr;
+    -webkit-box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 54px 3px rgba(0,0,0,0.56);
+
+}
+
+input {
+    outline:none;
+}
+a {
+    outline:none;
+    font-family: 'GT Walsheim Pro', Arial, Helvetica, sans-serif;
+}
+p, h2{
+    font-family: 'GT Walsheim Pro', Arial, Helvetica, sans-serif;
+}
+
+
+
+@import "header.scss";
+/*
+@import "block1.scss";
+@import "block2.scss";
+@import "block3.scss";
+@import "block4.scss";
+@import "block5.scss";
+@import "block6.scss";
+@import "block7.scss";
+@import "nav.scss";
+@import "form.scss";
+@import "footer.scss";
+@import "zakaz.1.scss";
+
+*/
