@@ -1,0 +1,226 @@
+p,a,h2,h1,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.block_zak{
+    display: none;
+
+}
+.block_zak_active{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /*left: 50%;
+    margin-left: -450px;
+    top: 50%;
+    margin-top: -333px;  */
+    left: 0px;
+    top: 120px;
+    background: rgba(0, 0, 0, 0.335);
+    z-index: 2200;
+    width: 100%;
+    height: 95%;
+  
+    
+}
+
+.block_zakaz{
+
+    width: 900px;
+    height: 786px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+   // background-image: url("/images/bg/bg2.png");
+   // background-size: cover;
+   // background-position: center;
+    background: #000;
+   position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+    border-radius: 25px;
+    h2, p{
+        color: white;
+        text-align: center;
+    }
+}
+.block_zakaz_close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  //  z-index: 2500;
+    img{
+        width: 35px;
+        height: auto;
+    }
+}
+.block_zakaz1, .block_zakaz2, .block_zakaz3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 900px;
+    align-self: center;
+    margin-top: 50px;
+}
+.block_zakaz1{
+h2{
+    font-size: 24px;
+    margin-top: 40px;
+}
+p{
+    font-size: 32px;
+
+}
+}
+.block_zakaz2{
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+
+    p{
+        text-align: start;
+        line-height: 1.5;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    img{
+        width: 200px;
+        height: auto;
+    }
+}
+.block_zakaz3{
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+    li::after{
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 7px;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50px;
+    }
+    p{
+        font-size: 18px;
+        //line-height: 1.5;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+.block_zakaz_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:920px){
+    .block_zakaz1, .block_zakaz2, .block_zakaz3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 600px;
+        align-self: center;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:650px){
+    .block_zakaz1, .block_zakaz2, .block_zakaz3{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 420px;
+        align-self: center;
+        margin-top: 50px;
+    }
+    .block_zakaz1, .block_zakaz2{
+        h2{
+            font-size: 16px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 18px;
+        
+        }
+    }
+    .block_zakaz3{
+
+        h2{
+            font-size: 22px;
+            margin-top: 40px;
+        }
+        p{
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+
+}
+@media screen and (max-width:450px){
+    .block_zakaz1, .block_zakaz2, .block_zakaz3{
+
+        width: 300px;
+
+    }
+    .block_zakaz1{
+        h2{
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 16px;
+        
+        }
+        }
+        .block_zakaz2{
+
+        
+            p{
+                line-height: 1.5;
+                text-align: start;
+                font-size: 14px;
+                margin: 0px;
+            }
+            img{
+                width: 220px;
+                height: auto;
+            }
+        }
+        .block_zakaz3{
+            p{
+                text-align: start;
+
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+}
+

@@ -1,0 +1,654 @@
+.block5_form {
+  position: relative;
+  width: 590px;
+  height: 520px;
+  background: #ffffff;
+  z-index: 1200;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0; }
+  .block5_form img {
+    width: 25px;
+    height: 25px; }
+  .block5_form p {
+    color: #fff; }
+
+.header_form_block {
+  position: relative;
+  width: 390px;
+  height: 430px;
+  background: #ffffff;
+  z-index: 1200;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header_form_block img {
+    width: 25px;
+    height: 25px; }
+  .header_form_block .call_me_block {
+    display: grid;
+    grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+    grid-template-rows: 40px 250px 120px;
+    grid-template-columns: 390px;
+    width: 570px;
+    grid-area: call_me_block;
+    align-self: center;
+    position: relative;
+    border-radius: 10px;
+    justify-content: center; }
+  .header_form_block .form_tel, .header_form_block .form_mail, .header_form_block .form_name, .header_form_block .form_surn {
+    padding-top: 15px; }
+    .header_form_block .form_tel p, .header_form_block .form_mail p, .header_form_block .form_name p, .header_form_block .form_surn p {
+      padding-left: 2px;
+      padding-bottom: 2px; }
+  .header_form_block .call_title {
+    padding: 0 15px; }
+
+#close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  z-index: 1000; }
+
+.call_me {
+  grid-area: call_me;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
+  transition: all 3.6s; }
+
+.call_me_block {
+  display: grid;
+  grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+  grid-template-rows: 100px 300px 120px;
+  grid-template-columns: 570px;
+  width: 570px;
+  grid-area: call_me_block;
+  align-self: center;
+  position: relative;
+  border-radius: 10px;
+  justify-content: center; }
+
+/*.call_me_top{
+    grid-area: call_me_top;
+    display: grid;
+    grid-template-areas: "new_price";
+    border-radius: 10px 10px 0 0;
+    background: #1b500a;
+}*/
+.call_title {
+  grid-area: call_title;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .call_title img {
+    margin: 20px 0;
+    height: auto;
+    width: 115px; }
+  .call_title p {
+    font-size: 18px;
+    text-align: center;
+    z-index: 1100;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-weight: 700; }
+
+.new_price {
+  grid-area: new_price;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  border-radius: 20px 20px 0 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.input {
+  height: 45px;
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-right: 20px;
+  font-size: 18px; }
+
+.call_me_form {
+  grid-area: call_me_form;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 20px 20px;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.call_me_bottom {
+  grid-area: call_me_bottom;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.form_top, .form_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form_tel, .form_mail, .form_name, .form_surn {
+  padding-top: 35px; }
+  .form_tel p, .form_mail p, .form_name p, .form_surn p {
+    padding-left: 2px;
+    padding-bottom: 2px; }
+
+.submit {
+  height: 60px;
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px; }
+
+.sub {
+  width: 340px;
+  height: 60px;
+  background: #4290FC;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  text-align: start;
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff; }
+
+.call_me_bottom_info {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.call_me_blocked {
+  margin: 20px 0; }
+  .call_me_blocked img {
+    margin-right: 5px; }
+
+@media screen and (max-width: 1000px) {
+  .header_form_block {
+    position: relative;
+    width: 250px;
+    height: 430px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .header_form_block img {
+      width: 25px;
+      height: 25px; }
+    .header_form_block .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 40px 250px 120px;
+      grid-template-columns: 250px;
+      width: 250px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .header_form_block .form_tel, .header_form_block .form_mail, .header_form_block .form_name, .header_form_block .form_surn {
+      padding-top: 15px; }
+      .header_form_block .form_tel p, .header_form_block .form_mail p, .header_form_block .form_name p, .header_form_block .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .header_form_block .call_title {
+      padding: 0 15px; }
+    .header_form_block .input {
+      height: 45px;
+      width: 200px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      margin-right: 20px;
+      font-size: 14px; }
+    .header_form_block .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; } }
+
+@media screen and (max-width: 850px) {
+  .header_form_block {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .header_form_block img {
+      width: 25px;
+      height: 25px; }
+    .header_form_block .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 40px 250px 120px;
+      grid-template-columns: 550px;
+      width: 250px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .header_form_block .form_tel, .header_form_block .form_mail, .header_form_block .form_name, .header_form_block .form_surn {
+      padding-top: 15px; }
+      .header_form_block .form_tel p, .header_form_block .form_mail p, .header_form_block .form_name p, .header_form_block .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .header_form_block .call_title {
+      padding: 0 15px; }
+    .header_form_block .input {
+      height: 45px;
+      width: 400px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      margin-right: 20px;
+      font-size: 14px; }
+    .header_form_block .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; } }
+
+@media screen and (max-width: 620px) {
+  .block5_form {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0; }
+  .header_form_block {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 500px) {
+  .header_form_block {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center; }
+    .header_form_block .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 40px 250px 120px;
+      grid-template-columns: 1fr;
+      width: 300px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .header_form_block .form_tel, .header_form_block .form_mail, .header_form_block .form_name, .header_form_block .form_surn {
+      padding-top: 15px; }
+      .header_form_block .form_tel p, .header_form_block .form_mail p, .header_form_block .form_name p, .header_form_block .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .header_form_block .call_title {
+      padding: 0 0px; }
+    .header_form_block .input {
+      height: 45px;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-size: 14px; }
+    .header_form_block .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; }
+    .header_form_block .call_me_form {
+      padding: 0 0; }
+  .block5_form {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .block5_form .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 110px 250px 120px;
+      grid-template-columns: 1fr;
+      width: 300px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .block5_form .form_tel, .block5_form .form_mail, .block5_form .form_name, .block5_form .form_surn {
+      padding-top: 15px; }
+      .block5_form .form_tel p, .block5_form .form_mail p, .block5_form .form_name p, .block5_form .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .block5_form .call_title {
+      padding: 0 0px; }
+    .block5_form .input {
+      height: 45px;
+      width: 250px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-size: 14px; }
+    .block5_form .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; }
+    .block5_form .call_me_form {
+      padding: 0 0; } }
+
+@media screen and (max-width: 380px) {
+  .header_form_block {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .header_form_block .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 40px 250px 120px;
+      grid-template-columns: 1fr;
+      width: 300px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .header_form_block .form_tel, .header_form_block .form_mail, .header_form_block .form_name, .header_form_block .form_surn {
+      padding-top: 15px; }
+      .header_form_block .form_tel p, .header_form_block .form_mail p, .header_form_block .form_name p, .header_form_block .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .header_form_block .call_title {
+      padding: 0 0px; }
+    .header_form_block .input {
+      height: 45px;
+      width: 250px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-size: 14px; }
+    .header_form_block .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; }
+    .header_form_block .call_me_form {
+      padding: 0 0; }
+  .block5_form {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: #ffffff;
+    z-index: 1200;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .block5_form .call_me_block {
+      display: grid;
+      grid-template-areas: "call_title" "call_me_form" "call_me_bottom";
+      grid-template-rows: 110px 250px 120px;
+      grid-template-columns: 1fr;
+      width: 300px;
+      grid-area: call_me_block;
+      align-self: center;
+      position: relative;
+      border-radius: 10px;
+      justify-content: center; }
+    .block5_form .form_tel, .block5_form .form_mail, .block5_form .form_name, .block5_form .form_surn {
+      padding-top: 15px; }
+      .block5_form .form_tel p, .block5_form .form_mail p, .block5_form .form_name p, .block5_form .form_surn p {
+        padding-left: 2px;
+        padding-bottom: 2px; }
+    .block5_form .call_title {
+      padding: 0 0px; }
+    .block5_form .input {
+      height: 45px;
+      width: 250px;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-size: 14px; }
+    .block5_form .submit {
+      height: 60px;
+      width: 220px;
+      padding: 0 20px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      border-radius: 4px; }
+    .block5_form .call_me_form {
+      padding: 0 0; } }
+
+/*
+@media screen and (max-width:650px){
+    .form_top, .form_bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form_tel, .form_mail, .form_name, .form_surn{
+        padding-top: 35px;
+        align-self: center;
+        p{
+            padding-left: 2px;
+            padding-bottom: 2px;
+        }
+    }
+    .call_me_block{
+        display: grid;
+        grid-template-areas: 
+        "call_title"
+        "call_me_form"
+        "call_me_bottom";
+        grid-template-rows:40px 300px 150px;
+       // height: 120px;
+        //background: $white;
+        grid-template-columns:300px;
+        grid-area: call_me_block;
+        position: relative;
+        border-radius: 10px;
+        width: 300px;
+    
+    }
+    .call_me_bottom{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+
+    }
+    .call_me_bottom_info{
+        //align-self: center;
+    }
+    #sub{
+        width: 220px;
+    }
+    .call_me_form{
+        grid-area: call_me_form;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 5px 5px;
+        font-family: 'Source Sans Pro', sans-serif;
+    
+    
+    }
+    #block_form{
+        display: flex;
+       padding-top: 0px;
+       align-self: center;
+       background: #000;
+       //transition: all 1.0s;
+       //top: 300px;
+       left: 50%;
+       width: 320px;
+       height: 500px !important;
+       //background: none;
+       padding: 0px 5px ;
+     //  z-index: 800;
+       margin-left: -165px;
+       border-radius: 15px;
+       .form_name , .form_tel , .submit , .form_mail{
+           width: 300px;
+           padding: 0;
+          // margin: 20px 0px;
+           color: #fff;
+           margin-top: 10px;
+       }
+       .input{
+           width: 280px;
+           padding-left: 10px;                                          
+       }
+       .submit{
+           width: 280px;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-item: center;
+       }
+       .call_me{
+           width: 320px;
+       }
+   }
+}
+*/
+/*@media screen and (max-width:550px){
+    .call_me{
+        grid-area: call_me;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .call_me_block{
+        grid-template-columns:350px;
+        justify-content: center;
+    }
+
+
+
+
+}*/
+.bottom_form {
+  display: flex;
+  padding-top: 120px;
+  align-self: center;
+  width: 530px;
+  height: 400px;
+  background: none;
+  padding-left: 60px;
+  z-index: 800;
+  border-radius: 15px; }
+  .bottom_form .form_name, .bottom_form .form_tel, .bottom_form .submit, .bottom_form .form_mail {
+    width: 300px;
+    padding: 0;
+    margin: 20px 0px;
+    color: #fff; }
+  .bottom_form .input {
+    width: 300px;
+    padding-left: 10px; }
+  .bottom_form .submit {
+    width: 310px; }
+
+@media screen and (max-width: 1405px) {
+  .bottom_form {
+    width: 400px; } }
+
+@media screen and (max-width: 1100px) {
+  .bottom_form {
+    width: 350px;
+    padding-left: 20px; } }
+
+@media screen and (max-width: 1100px) {
+  .bottom_form {
+    display: none; } }

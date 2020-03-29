@@ -1,0 +1,15 @@
+.block5{
+    grid-area: block5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D344E;
+
+}
+@media screen and (max-width:850px){
+    .block5{
+background: #e2e8f0;
+
+    }
+}

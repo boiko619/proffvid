@@ -1,71 +1,132 @@
 .header{
     grid-area: header;
-    height: 500px;
-    background: rgb(170, 121, 121);
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 800;
-}
-
-.header_video{
-position: absolute;
-top:0;
-left: 0;
-//height: auto;
-width: 100%;
--o-object-fit: cover;
-object-fit: cover;
-}
-.header_bottom{
-    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 500px;
-    height: 250px;
-    background:#fff;
-    z-index: 1000;
 }
-.header_bottom_active{
-    width: 240px;
-    height: 65px;
-    background: rgb(45, 216, 23);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   p{
-       color: #fff;
-       font-size: 32px;
-       text-transform: uppercase;
-   }
+.header_title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: 900;
+    line-height: 1.075;
+    font-family: Ubuntu, sans-serif;
+    color: #2D344E;
 }
-.header_top{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    p{
-        font-size: 32px;
-        color: #fff;
+.header_text{
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.375;
+    font-family: 'Open Sans', sans-serif;
 
+    color: #2D344E;
+}
+.header_block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header_video header_form";
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
+.header_video{
+    grid-area: header_video;
+    border-radius: 8px;
+    margin: 20px;
+    video{
+        border-radius: 8px;
+
+        width: 100%;
+        height: auto;
     }
 }
-.header_center{
+.header_form{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    p{
-        font-size: 18px;
-        color: #fff;
+    align-items: flex-start;
+    grid-area: header_form;
 
+    margin: 20px;
+
+}
+.header_form_block{
+    width: 100%;
+    background: #fff;
+    height: 358px;
+    border-radius: 8px;
+
+}
+@media screen and (max-width:1505px){
+    .header_block{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header_video header_form";
+        padding-left: 0rem;
+        padding-right: 0rem;
+    
+    }
+}
+@media screen and (max-width:850px){
+    .header_block{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:  400px 1fr;
+        grid-template-areas: "header_video"
+        "header_form";
+        padding-left: 0rem;
+        padding-right: 0rem;
+    
+    }
+    .header_title{
+        margin: 25px 0;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        font-weight: 900;
+        line-height: 50px;
+        font-family: Ubuntu, sans-serif;
+        color: #2D344E;
+    }
+
+}
+@media screen and (max-width:590px){
+    .header_block{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:  300px 1fr;
+        grid-template-areas: "header_video"
+        "header_form";
+        padding-left: 0rem;
+        padding-right: 0rem;
+    
+    }
+}
+@media screen and (max-width:500px){
+    .header_block{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:  300px 1fr;
+        grid-template-areas: "header_video"
+        "header_form";
+        padding-left: 0rem;
+        padding-right: 0rem;
+    
+    }
+}
+@media screen and (max-width:450px){
+    .header_block{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows:  223px 1fr;
+        grid-template-areas: "header_video"
+        "header_form";
+        padding-left: 0rem;
+        padding-right: 0rem;
+    
     }
 }

@@ -1,0 +1,30 @@
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 100px; }
+
+.nav_logo img {
+  width: 114px;
+  height: auto; }
+
+.nav_img {
+  width: 162px;
+  height: auto; }
+
+@media screen and (max-width: 850px) {
+  .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px; } }
+
+@media screen and (max-width: 500px) {
+  .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px; } }

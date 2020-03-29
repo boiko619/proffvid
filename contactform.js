@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     
     $.ajax({
     type: "POST",
-    url: "http://www.capital-group.site/contact.php",
+    url: "http://zonarost.site/contact.php",
     data: str,
     success: function(msg) {
     if(msg == 'OK') {
